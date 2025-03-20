@@ -30,6 +30,39 @@
   src: url("./assets/fonts/open-sans/open-sans-v40-latin-700.woff2") format("woff2");
 }
 
+:root {
+  /* Colors */
+  --color-background-primary: hsl(0, 0%, 100%);
+  --color-foreground-primary: hsl(300, 21%, 5%);
+  --color-accent-primary: hsl(219, 44%, 65%);
+
+  /* typography */
+  --font-primary: "Open Sans", "sans-serif";
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --text-sm: 0.8rem;
+  --text-md: 1rem;
+  --text-lg: 1.53rem;
+  --text-xl: 2rem;
+
+  /* Spacing */
+  --space-sm: 1rem;
+  --space-md: 1.42rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Rounded Corner */
+  --rounded-sm: 6px;
+  --rounded-md: 8px;
+  --rounded-lg: 10px;
+  --rounded-xl: 12px;
+  --rounded-full: 999px;
+}
+
 *,
 *::before,
 *::after {
