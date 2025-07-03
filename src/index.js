@@ -1,12 +1,12 @@
 import "./style.css"
-import tagsCreator from "./helpers/tags-creator"
+import tagsBuilder from "./utils/tagsBuilder"
 const root = document.querySelector("#root");
 
 function init(container) {
-  const sideBar = tagsCreator("div", "main__sidebar");
-  const mainTodos = tagsCreator("div", "main__todos");
+  const sidebar = tagsBuilder("div", "main__sidebar");
+  const mainTodos = tagsBuilder("div", "main__todos");
 
-  container.appendChild(sideBar);
+  container.appendChild(sidebar);
   container.appendChild(mainTodos);
 }
 
