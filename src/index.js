@@ -1,13 +1,11 @@
 import "./style.css"
-import tagsBuilder from "./utils/tagsBuilder"
+import sidebar from "./components/Sidebar/Sidebar";
+import todos from "./components/Todos/Todos";
 const root = document.querySelector("#root");
 
 function init(container) {
-  const sidebar = tagsBuilder("div", "main__sidebar");
-  const mainTodos = tagsBuilder("div", "main__todos");
-
-  container.appendChild(sidebar);
-  container.appendChild(mainTodos);
+  container.appendChild(sidebar());
+  container.appendChild(todos());
 }
 
 init(root)
