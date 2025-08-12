@@ -1,7 +1,7 @@
 import tagsBuilder from "../../utils/tagsBuilder"
 
 function sidebar() {
-  const sidebar = tagsBuilder("aside", "main__sidebar");
+  const sidebar = tagsBuilder("aside", "sidebar");
   return sidebar
 }
 
