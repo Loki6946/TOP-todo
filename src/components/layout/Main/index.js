@@ -1,8 +1,8 @@
 import tagsBuilder from "../../../utils/tagsBuilder";
 
-function todos() {
-  const todos = tagsBuilder("main", "todos");
-  return todos;
+function main() {
+  const main = tagsBuilder("main");
+  return main;
 }
 
-export default todos
+export default main

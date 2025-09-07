@@ -1,6 +1,6 @@
 function tagsBuilder(tag, className, textContent = null) {
   const element = document.createElement(tag);
-  element.classList.add(className);
+  className ? element.classList.add(className) : null;
   element.textContent = textContent;
   return element
 }
