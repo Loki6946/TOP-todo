@@ -36,6 +36,9 @@
   --color-foreground-primary: hsl(300, 21%, 5%);
   --color-accent-primary: hsl(219, 44%, 65%);
 
+  --color-background-secondary: hsl(0, 0%, 95%);
+  --color-foreground-secondary: hsl(300, 21%, 10%);
+
   /* typography */
   --font-primary: "Open Sans", "sans-serif";
 
