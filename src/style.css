@@ -32,12 +32,23 @@
 
 :root {
   /* Colors */
-  --color-background-primary: hsl(0, 0%, 100%);
-  --color-foreground-primary: hsl(300, 21%, 5%);
-  --color-accent-primary: hsl(219, 44%, 65%);
+  --color-white-100: hsl(0, 0%, 100%);
+  --color-white-300: hsl(0, 0%, 95%);
+  --color-white-500: hsl(0, 0%, 77%);
+  --color-white-700: hsl(0, 0%, 53%);
+  --color-white-900: hsl(0, 0%, 31%);
 
-  --color-background-secondary: hsl(0, 0%, 95%);
-  --color-foreground-secondary: hsl(300, 21%, 10%);
+  --color-black-100: hsl(300, 21%, 67%);
+  --color-black-300: hsl(300, 21%, 48%);
+  --color-black-500: hsl(300, 21%, 22%);
+  --color-black-700: hsl(300, 21%, 13%);
+  --color-black-900: hsl(300, 21%, 5%);
+
+  --color-accent-100: hsl(219, 44%, 82%);
+  --color-accent-300: hsl(219, 44%, 65%);
+  --color-accent-500: hsl(219, 44%, 53%);
+  --color-accent-700: hsl(219, 44%, 34%);
+  --color-accent-900: hsl(219, 44%, 20%);
 
   /* typography */
   --font-primary: "Open Sans", "sans-serif";
@@ -47,16 +58,20 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
-  --text-sm: 0.8rem;
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
   --text-md: 1rem;
   --text-lg: 1.53rem;
-  --text-xl: 2rem;
+  --text-xl: 2.45rem;
+  --text-xxl: 4rem;
 
   /* Spacing */
+  --space-xs: 0.8rem;
   --space-sm: 1rem;
   --space-md: 1.42rem;
   --space-lg: 2rem;
   --space-xl: 3rem;
+  --space-xxl: 5rem;
 
   /* Rounded Corner */
   --rounded-sm: 6px;
@@ -119,5 +134,5 @@ h1, h2, h3, h4, h5, h6 {
 .root{
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
 }
