@@ -1,7 +1,9 @@
-function tagsBuilder(tag, className, textContent = null) {
+function tagsBuilder(tag, {textContent, className} = {}) {
   const element = document.createElement(tag);
-  className ? element.classList.add(className) : null;
-  element.textContent = textContent;
+
+  if (textContent !== undefined) element.textContent = textContent;
+  if (className !== undefined) element.className = className;
+  
   return element
 }
 
