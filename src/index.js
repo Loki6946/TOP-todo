@@ -1,11 +1,11 @@
 import "./style.css"
-import sidebar from "./components/layout/Sidebar";
-import todos from "./components/layout/Main/";
+import Sidebar from "./components/layout/Sidebar/Sidebar.js";
+import Main from "./components/layout/Main/Main.js";
 const root = document.querySelector("#root");
 
 function init(container) {
-  container.appendChild(sidebar());
-  container.appendChild(todos());
+  container.appendChild(Sidebar());
+  container.appendChild(Main());
 }
 
 init(root)
