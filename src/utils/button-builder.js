@@ -1,4 +1,4 @@
-function buttonBuilder({type = "button", textContent, className, id, onClick}) {
+function buttonBuilder({type = "button", textContent, className, id, onClick} = {}) {
   const button = document.createElement("button");
 
   button.type = type;
