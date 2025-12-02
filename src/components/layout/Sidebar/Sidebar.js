@@ -1,6 +1,7 @@
 import "./Sidebar.css";
 import tagsBuilder from "../../../utils/tags-builder";
 import buttonBuilder from "../../../utils/button-builder";
+import iconBuilder from "../../../utils/icon-builder";
 import {displayList , addList} from "../../features/list-handler";
 
 function sidebar() {
@@ -9,13 +10,15 @@ function sidebar() {
   displayList(nav);
 
   const buttonContainer = tagsBuilder("div", { className: "sidebar__button-container" });
+  const buttonIcon = iconBuilder("add");
   const newListButton = buttonBuilder({
-    textContent: "+ New List",
+    textContent: "New List",
     className: "sidebar__newlist-button",
     onClick: () => {
       addList(nav);
     }
   });
+  newListButton.append(buttonIcon);
   buttonContainer.append(newListButton);
 
   sidebar.append(nav, buttonContainer);
