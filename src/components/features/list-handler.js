@@ -33,9 +33,7 @@ export function displayList(container) {
 export function addList(container) {
   const domInput = container.querySelector("#new-list-input");
   
-  if (domInput) {
-    return;
-  }
+  if (domInput) return
   
   const inputContainer = tagsBuilder("div", {className: "sidebar__input-container"});
   const input = inputBuilder("text", {className: "sidebar__input", id: "new-list-input"});
