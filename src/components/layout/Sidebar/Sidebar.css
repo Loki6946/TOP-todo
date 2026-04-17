@@ -87,11 +87,15 @@
 }
 
 .sidebar__newlist-button {
+  width: 100%;
   border: none;
   background-color: transparent;
   color: var(--color-white-900);
   font-size: var(--text-sm);
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
 }
 
 .sidebar__newlist-button:hover {

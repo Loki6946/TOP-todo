@@ -10,15 +10,16 @@ function sidebar() {
   displayList(nav);
 
   const buttonContainer = tagsBuilder("div", { className: "sidebar__button-container" });
+  const buttonText = tagsBuilder("span", { textContent: "New List"});
   const buttonIcon = iconBuilder("add");
   const newListButton = buttonBuilder({
-    textContent: "New List",
     className: "sidebar__newlist-button",
     onClick: () => {
       addList(nav);
     }
   });
   newListButton.append(buttonIcon);
+  newListButton.append(buttonText);
   buttonContainer.append(newListButton);
 
   sidebar.append(nav, buttonContainer);
